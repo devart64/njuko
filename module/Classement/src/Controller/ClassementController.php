@@ -9,9 +9,6 @@ class ClassementController extends AbstractActionController
 {
     public function indexAction()
     {
-
-        /** TODO : Implementer les classements */
-
         return new ViewModel();
     }
 }
