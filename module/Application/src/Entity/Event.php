@@ -70,5 +70,5 @@ class Event
     {
         $this->dateEvent = $dateEvent;
     }
-
 }
+ 
