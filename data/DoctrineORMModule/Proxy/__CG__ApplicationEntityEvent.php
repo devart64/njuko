@@ -71,14 +71,6 @@ class Event extends \Application\Entity\Event implements \Doctrine\ORM\Proxy\Pro
     }
 
     /**
-     * 
-     */
-    public function __clone()
-    {
-        $this->__cloner__ && $this->__cloner__->__invoke($this, '__clone', []);
-    }
-
-    /**
      * Forces initialization of the proxy
      */
     public function __load()
