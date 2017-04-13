@@ -70,11 +70,7 @@ class ParticipantController extends AbstractActionController
 
             $participant = $form->getData();
 
-            /** TODO Modification Evenement (forcer pour le moment) */
-            /** @var \Application\Entity\Event $event */
-            $event = $this->entityManager->getRepository('Application\Entity\Event')->find(1);
-            $participant->setEvent($event);
-
+            $participant->setId($id);
             $this->entityManager->persist($participant);
             $this->entityManager->flush();
 

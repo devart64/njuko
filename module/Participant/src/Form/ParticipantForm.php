@@ -52,6 +52,13 @@ class ParticipantForm extends Form
                 ]
             ],
         ]);
+        $this->add([
+            'name'    => 'transitTime',
+            'type'    => 'text',
+            'options' => [
+                'label' => 'Tps de passage'
+            ],
+        ]);
 
         $this->add([
             'name'    => 'sex',

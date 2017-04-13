@@ -26,6 +26,8 @@
                         <td>Prénom</td>
                         <td>Sexe</td>
                         <td>Evénement</td>
+                        <td>Numéro de dossard</td>
+                        <td>Temps de passage</td>
                         <td></td>
                     </tr>
                 </thead>
@@ -49,7 +51,9 @@
                                         }
                                     ?>
                                 </td>
-                                <td><?=$participant->getEvent($id)->getName()?></td>
+                                <td><?=$participant->getEvent()->getName()?></td>
+                                <td></td>
+                                <td><?=$participant->getTransitTime()?></td>
                                 <td>
                                     <a class="btn btn-sm btn-default" href="<?= $this->url('participant/participant-form', array('id' => $participant->getId())) ?>">Editer</a>
                                     <a class="btn btn-sm btn-default" href="<?= $this->url('participant/delete', array('id' => $participant->getId())) ?>">Supprimer</a>

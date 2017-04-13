@@ -23,6 +23,9 @@ class Participant
     /** @ORM\Column(type="string") */
     protected $sex;
 
+    /** @ORM\Column(type="string") */
+    protected $transittime;
+
     /**
      * @ORM\ManyToOne(targetEntity="Application\Entity\Event")
      * @ORM\JoinColumn(name="event_id", referencedColumnName="id", onDelete="CASCADE")
@@ -93,6 +96,22 @@ class Participant
     public function setSex($sex)
     {
         $this->sex = $sex;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTransitTime()
+    {
+        return $this->transittime;
+    }
+
+    /**
+     * @param mixed $transittime
+     */
+    public function setTransitTime($transittime)
+    {
+        $this->transittime = $transittime;
     }
 
     /**
