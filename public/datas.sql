@@ -101,3 +101,4 @@ INSERT INTO `User` (`event_id`, `firstname`, `lastname`, `sex`) VALUES ('1', 'Pa
 INSERT INTO `User` (`event_id`, `firstname`, `lastname`, `sex`) VALUES ('1', 'Participant_prenom_98', 'Participant_nom_98', 'male');
 INSERT INTO `User` (`event_id`, `firstname`, `lastname`, `sex`) VALUES ('1', 'Participant_prenom_99', 'Participant_nom_99', 'male');
 INSERT INTO `User` (`event_id`, `firstname`, `lastname`, `sex`) VALUES ('1', 'Participant_prenom_100', 'Participant_nom_100', 'male');
+ 
