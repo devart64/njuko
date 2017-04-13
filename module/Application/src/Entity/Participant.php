@@ -129,5 +129,5 @@ class Participant
     {
         $this->event = $event;
     }
-
 }
+ 
