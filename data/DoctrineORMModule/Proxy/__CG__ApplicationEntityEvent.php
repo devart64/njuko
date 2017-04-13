@@ -73,28 +73,6 @@ class Event extends \Application\Entity\Event implements \Doctrine\ORM\Proxy\Pro
     /**
      * 
      */
-    public function __wakeup()
-    {
-        if ( ! $this->__isInitialized__) {
-            $this->__initializer__ = function (Event $proxy) {
-                $proxy->__setInitializer(null);
-                $proxy->__setCloner(null);
-
-                $existingProperties = get_object_vars($proxy);
-
-                foreach ($proxy->__getLazyProperties() as $property => $defaultValue) {
-                    if ( ! array_key_exists($property, $existingProperties)) {
-                        $proxy->$property = $defaultValue;
-                    }
-                }
-            };
-
-        }
-    }
-
-    /**
-     * 
-     */
     public function __clone()
     {
         $this->__cloner__ && $this->__cloner__->__invoke($this, '__clone', []);
