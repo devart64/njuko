@@ -1,6 +1,6 @@
 Test technique njuko.com
 ========================
-
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/321869c9-ea99-4828-bf7d-492c14b69a11/big.png)](https://insight.sensiolabs.com/projects/321869c9-ea99-4828-bf7d-492c14b69a11)
 # Description
 
 Ce test technique à pour but d'évaluer les compétences en développement Web sur le framework ZF3 à l'aide de l'ORM Doctrine 2
